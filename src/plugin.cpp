@@ -95,7 +95,7 @@ from_property_field_t(const property_field_t &value) {
   case 6:
     return value.int_list;
   case 7:
-    return convert_vector<ng_float_t, simFloat>(value.float_list);
+    return convert_vector<ng_float_t, float>(value.float_list);
   case 8:
     return value.string_list;
   case 9:
@@ -139,7 +139,7 @@ static property_field_t to_property_field_t(const core::Property::Field &v) {
     value.int_list = std::get<std::vector<int>>(v);
     break;
   case 7:
-    value.float_list = convert_vector<simFloat, ng_float_t>(
+    value.float_list = convert_vector<float, ng_float_t>(
         std::get<std::vector<ng_float_t>>(v));
     break;
   case 8:
@@ -698,7 +698,7 @@ public:
                                  get_actuated_wheel_speeds_out *out) {
     auto behavior = behavior_with_handle(in->handle);
     if (behavior) {
-      out->speeds = convert_vector<simFloat, ng_float_t>(
+      out->speeds = convert_vector<float, ng_float_t>(
           behavior->get_actuated_wheel_speeds());
     }
   }
@@ -895,7 +895,7 @@ public:
       if (kinematics && kinematics->is_wheeled()) {
         core::WheeledKinematics *wk =
             dynamic_cast<core::WheeledKinematics *>(kinematics);
-        out->speeds = convert_vector<simFloat, ng_float_t>(
+        out->speeds = convert_vector<float, ng_float_t>(
             wk->feasible_wheel_speeds(twist));
       }
     }
