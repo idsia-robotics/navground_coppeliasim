@@ -2,7 +2,7 @@
 Installation
 ============
 
-Navground, CoppeliaSim, and navground_coppeliasim supports Linux, macOS and Windows.
+Navground, CoppeliaSim, and navground_coppeliasim support Linux, macOS and Windows.
 
 Navground
 =========

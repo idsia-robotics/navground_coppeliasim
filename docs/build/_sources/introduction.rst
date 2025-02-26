@@ -6,7 +6,7 @@ Introduction
 
 This package provides a `CoppeliaSim <https://www.coppeliarobotics.com>`_ plugin that exposes a lua interface to navground C++ library.
 
-Using the plugin, you can use navground to let CoppeliaSim agents/robots navigate and avoid obstacles using any navigation behavior implemented in navground. Moreover, you can setup and record navigation experiments in HDF5 files. 
+With the plugin, you can use navground to let CoppeliaSim agents/robots navigate and avoid obstacles using any navigation behavior implemented in navground. Moreover, you can setup and record navigation experiments in HDF5 files. 
 
 Acknowledgement and disclaimer
 ==============================

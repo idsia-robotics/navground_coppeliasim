@@ -10,7 +10,7 @@
 
 ### Changed
 
-- Split from `navground` main project.
+- Split from `navground` main repository.
 
 ### Removed
 
