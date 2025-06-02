@@ -4,6 +4,8 @@
 
 ### Added
 
+- Added index to CoppeliaSim properties callbacks
+
 ### Fixed
 
 - Corrected conversion between `simFloat` and `ng_float_t`
