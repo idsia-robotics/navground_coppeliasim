@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.11)
 
 project(
   navground_coppeliasim
-  VERSION 0.5.0
+  VERSION 0.6.0
   LANGUAGES CXX C)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
