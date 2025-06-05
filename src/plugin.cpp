@@ -463,7 +463,7 @@ public:
       const auto &value = behavior->get_target_distance(in->ignore_tolerance);
       if (value) {
         out->valid = true;
-        out->distance = *value;
+        out->distance = value;
       } else {
         out->valid = false;
       }
